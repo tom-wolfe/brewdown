@@ -2,14 +2,13 @@
   "name": "brewdown",
   "version": "0.1.0",
   "description": "A markdown parser and stylesheet specifically for D&D homebrew.",
-  "main": "./src/index.js",
+  "main": "./src/js/index.js",
   "scripts": {
-    "build": "npm run clean && npm run lint && npm run webpack",
+    "build": "npm run clean && npm run lint && node ./build/index.js",
     "clean": "rimraf ./dist",
     "lint": "eslint .",
     "test": "karma start --single-run",
-    "test_watch": "karma start",
-    "webpack": "webpack"
+    "test_watch": "karma start"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,9 @@
     "markdown",
     "D&D",
     "dungeons-and-dragons",
-    "rpg"
+    "rpg",
+    "markdown-it",
+    "markdown-it-plugin"
   ],
   "author": "Tom Wolfe <trwolfe13@gmail.com>",
   "license": "MIT",
@@ -31,13 +32,17 @@
   "devDependencies": {
     "eslint": "^4.3.0",
     "eslint-plugin-jasmine": "^2.8.3",
+    "fs-extra": "^4.0.0",
     "jasmine-core": "^2.7.0",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "node-sass": "^4.5.3",
     "rimraf": "^2.6.1",
     "webpack": "^3.4.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "markdown-it": "^8.3.1"
+  }
 }

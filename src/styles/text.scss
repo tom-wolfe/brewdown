@@ -1,0 +1,46 @@
+body {
+  font-family: "Bookmania";
+  font-size: .8rem;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Mrs Eaves OT";
+  font-variant: small-caps;
+  font-weight: 800;
+  margin-top: .5em;
+}
+
+h1 {
+  font-size: 2.4rem;
+  column-span: all;
+}
+
+h2 {
+  font-size: .705cm;
+}
+
+h3 {
+  border-bottom: 2px solid #c9ad6a;
+  font-size: .529cm;
+}
+
+h4 {
+  font-size: .458cm;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-family: "Scala Sans SC";
+  font-size: .423cm;
+  font-variant: normal;
+}
+
+h6 {
+
+}
+
+p {
+  padding: .4em 0;
+  line-height: 1.3em;
+}

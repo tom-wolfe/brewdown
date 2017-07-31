@@ -1,0 +1,31 @@
+.description, .note {
+  h1, h2, h3, h4, h5, h6 {
+    column-span: initial;
+    font-family: "Scala Sans SC";
+    font-size: .423cm;
+    font-variant: normal;
+  }
+
+  p {
+    font-family: "Scala Sans";
+  }
+}
+
+.description {
+  background-color: #faf7ea;
+  border-style: solid;
+  border-image: url("images/description-border.png") 12 round;
+  border-image-outset: 4px;
+  border-width: 7px;
+  margin-top: 0.5rem;
+}
+
+.note {
+  background-color: #e0e5c1;
+  border-image: url("images/note-border.png") 11;
+  border-image-outset: 9px 0;
+  border-style: solid;
+  border-width: 11px;
+  margin-top: 1rem;
+  padding: 0 10px;
+}

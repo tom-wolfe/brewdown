@@ -1,0 +1,16 @@
+@media screen {
+  .page {
+    background-color: #e8e1c5;
+  }
+}
+
+.a4 {
+  height: 297mm;
+  width: 210mm;
+  padding: 1cm 1.7cm 1.5cm 1cm;
+}
+
+.page {
+  column-count: 2;
+  column-fill: auto;
+}
