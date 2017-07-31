@@ -30,6 +30,7 @@
   "homepage": "https://github.com/trwolfe13/brewdown#readme",
   "devDependencies": {
     "eslint": "^4.3.0",
+    "eslint-plugin-jasmine": "^2.8.3",
     "jasmine-core": "^2.7.0",
     "karma": "^1.7.0",
     "karma-chrome-launcher": "^2.2.0",
