@@ -1,0 +1,14 @@
+dist/spec/
+dist/test/
+node_modules/
+spec/
+ebnf/
+coverage/
+src/
+.gitattributes
+.gitignore
+.editorconfig
+DEVELOPING.md
+tsconfig.json
+tslint.json
+*.tgz

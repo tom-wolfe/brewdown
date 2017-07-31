@@ -1,0 +1,39 @@
+{
+  "name": "brewdown",
+  "version": "0.1.0",
+  "description": "A markdown parser and stylesheet specifically for D&D homebrew.",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "npm run clean && npm run lint && npm run webpack",
+    "clean": "rimraf ./dist",
+    "lint": "eslint .",
+    "test": "npm run lint && karma start --single-run",
+    "test_watch": "karma start",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trwolfe13/brewdown.git"
+  },
+  "keywords": [
+    "homebrew",
+    "markdown",
+    "D&D",
+    "dungeons-and-dragons",
+    "rpg"
+  ],
+  "author": "Tom Wolfe <trwolfe13@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trwolfe13/brewdown/issues"
+  },
+  "homepage": "https://github.com/trwolfe13/brewdown#readme",
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "rimraf": "^2.6.1",
+    "webpack": "^3.4.1"
+  },
+  "dependencies": {
+    
+  }
+}
