@@ -3,7 +3,7 @@ const brewdown = require("./brewdown");
 
 let md = new MarkdownIt().use(brewdown);
 
-const toRender = "face /column shploo";
+const toRender = "face /page shploo";
 
 const result = md.render(toRender);
 
