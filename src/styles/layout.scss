@@ -14,3 +14,8 @@
   column-count: 2;
   column-fill: auto;
 }
+
+.column-break {
+  display: block;
+  -webkit-column-break-after: always;
+}

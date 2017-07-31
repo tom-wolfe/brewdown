@@ -4,6 +4,15 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+p {
+  padding: .4em 0;
+  line-height: 1.3em;
+}
+
+//
+// Headings
+//
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Mrs Eaves OT";
   font-variant: small-caps;
@@ -40,7 +49,22 @@ h6 {
 
 }
 
-p {
-  padding: .4em 0;
+// 
+// Lists
+// 
+
+ul, ol {
+  font-size: .352cm;
   line-height: 1.3em;
+  list-style-position: outside;
+  margin-bottom: 0.8em;
+  padding-left: 1.4em;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
 }
