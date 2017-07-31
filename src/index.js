@@ -1,1 +1,3 @@
-console.log("Ya ta!");
+const face = "10";
+
+
