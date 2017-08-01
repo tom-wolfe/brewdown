@@ -1,4 +1,4 @@
-blockquote, q, .description, .note, .stats {
+blockquote, q, .description, .note {
   h1, h2, h3, h4, h5, h6 {
     column-span: initial;
     font-family: "Scala Sans SC";
@@ -36,10 +36,13 @@ blockquote, q, .description {
   border-style: solid;
   border-width: 11px;
   box-shadow: 1px 4px 14px #888;
+  font-family: "Scala Sans";
   margin-bottom: 1em;
   padding: 5px 10px;
 
+
   h3 {
+    font-family: "Scala Sans";
     font-size: .529cm;
     font-weight: 400;
     border-bottom: 1px solid #58180D;
