@@ -24,3 +24,11 @@
   display: block;
   -webkit-column-break-after: always;
 }
+
+hr {
+  background-image: url("images/hr.png");
+  background-size: 100% 100%;
+  border: none;
+  height: 6px;
+  margin: 4px 0;
+}
