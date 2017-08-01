@@ -33,14 +33,15 @@ const rule = state => {
 
       if (currentToken.type === "text" && currentToken.content.indexOf("/column") > -1) {
         const nodes = [];
-        const parts = currentToken.content.split("/column");
         const level = currentToken.level;
+        const parts = currentToken.content.split("/column");
         parts.forEach((part, idx) => {
-          const token = new state.Token("text", "", 0);
-          token.content = part;
-          token.level = level;
-          nodes.push(token);
-
+          if (part) {
+            const token = new state.Token("text", "", 0);
+            token.content = part;
+            token.level = level;
+            nodes.push(token);
+          }
           if (idx < parts.length - 1) {
             const columnBreak = new state.Token(NAME, "", 0);
             columnBreak.content = "/column";
@@ -58,5 +59,5 @@ const rule = state => {
 
 module.exports = function (md) {
   md.core.ruler.push(NAME, rule);
-  md.renderer.rules[NAME] = () => "\n<i class=\"column-break\"></i>\n";
+  md.renderer.rules[NAME] = () => "\n<i class=\"col-break\"></i>\n";
 };

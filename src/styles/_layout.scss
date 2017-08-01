@@ -4,18 +4,12 @@
   }
 }
 
-.a4 {
-  height: 297mm;
-  width: 210mm;
-  padding: 1cm 1.7cm 1.5cm 1cm;
-}
-
 .page {
   column-count: 2;
   column-fill: auto;
 }
 
-.column-break {
+.col-break {
   display: block;
   -webkit-column-break-after: always;
 }
