@@ -1,9 +1,5 @@
 # TODO
 
-## Table Styling
-
-Tables are not styed at all, yet.
-
 ## Columns
 
 Add support for blocks that span two columns, and also add ability to enable two-columns/page sizing with the following:

@@ -11,7 +11,6 @@ module.exports = function (md) {
         token.attrPush(['class', 'no-bullet'])
       }
     }
-    console.log(blockTokens)
   }
 
   md.core.ruler.push('list_style', rule)

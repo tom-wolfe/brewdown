@@ -1,0 +1,24 @@
+table {
+  font-family: "Scala Sans";
+  
+  margin-bottom: 1em;
+  font-size: 10pt;
+
+  thead {
+    font-weight: 800;
+  }
+
+  tbody {
+    tr:nth-child(odd) {
+      background-color: #e0e5c1;
+    }
+  }
+
+  th, td {
+    padding: .3rem 1rem;
+  }
+}
+
+.two-col table {
+  width: 100%;
+}
