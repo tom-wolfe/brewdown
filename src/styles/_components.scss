@@ -36,19 +36,36 @@ blockquote, q, .description {
   border-style: solid;
   border-width: 11px;
   box-shadow: 1px 4px 14px #888;
-  font-family: "Scala Sans";
+  font-family: "ScalySans";
+  font-size: 0.75rem;
   margin-bottom: 1em;
   padding: 5px 10px;
 
-
   h3 {
-    font-family: "Scala Sans";
-    font-size: .529cm;
-    font-weight: 400;
     border-bottom: 1px solid #58180D;
+    font-family: "ScalySans";
+    font-size: .45cm;
+    font-weight: 400;
+    padding-bottom: 0.1rem;
+  }
+
+  ul, ol, p {
+    font-size: 0.75rem;
   }
 
   > ul.no-bullet {
     padding-left: 0;
+  }
+}
+
+.abilities {
+  &, table {
+    width: 100%;
+  }
+  th, td {
+    text-align: center;
+  }
+  tr:nth-child(odd) {
+    background-color: transparent;
   }
 }
