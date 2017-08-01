@@ -1,12 +1,25 @@
-.a2 { width: 420mm; height: 594mm; }
-.a3 { width: 297mm; height: 420mm; }
-.a4 { width: 210mm; height: 297mm; }
-.a5 { width: 148mm; height: 210mm; }
-.a6 { width: 105mm; height: 148mm; }
+.a2 { width: 420mm; }
+.a3 { width: 297mm; }
+.a4 { width: 210mm; }
+.a5 { width: 148mm; }
+.a6 { width: 105mm; }
 
-.b3 { width: 364mm; height: 515mm; }
-.b4 { width: 257mm; height: 364mm; }
-.b5 { width: 182mm; height: 257mm; }
+.b3 { width: 364mm; }
+.b4 { width: 257mm; }
+.b5 { width: 182mm; }
 
-.letter { width: 8.5in; height: 11in; }
-.legal { width: 8.5in; height: 14in; }
+.letter { width: 8.5in; }
+.legal { width: 8.5in; }
+
+.a2.two-col { height: 594mm; }
+.a3.two-col { height: 420mm; }
+.a4.two-col { height: 297mm; }
+.a5.two-col { height: 210mm; }
+.a6.two-col { height: 148mm; }
+
+.b3.two-col { height: 515mm; }
+.b4.two-col { height: 364mm; }
+.b5.two-col { height: 257mm; }
+
+.letter.two-col { height: 11in; }
+.legal.two-col { height: 14in; }
