@@ -57,7 +57,7 @@ module.exports = function (md) {
         }
       }
     }
-  };
+  }
 
   md.core.ruler.push(NAME, rule);
   md.renderer.rules[NAME] = () => "\n<div class=\"col-break\"></div>\n";

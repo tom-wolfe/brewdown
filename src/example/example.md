@@ -14,10 +14,8 @@ The ruin of an old town that was overrun by zombies and mutant plants.
 
 ### 1. Westernmost Cottage
 
-"""description
-# Description
-Cowering in the shadow of an old tree is a crumbled stone cottage with no roof. Weeds are rampant here and the path, dwindling, retreats into the forest.
-"""
+> # Description
+> Cowering in the shadow of an old tree is a crumbled stone cottage with no roof. Weeds are rampant here and the path, dwindling, retreats into the forest.
 
 #### Notes
 * ***Two Twig Blights*** hide amongst the weeds near the doorway.
@@ -29,10 +27,8 @@ Cowering in the shadow of an old tree is a crumbled stone cottage with no roof. 
 
 ### 2. Blighted Cottages
 
-"""description
-# Description
-These ruined side-by-side cottages look as though they might once have been the homes of prosperous shopkeepers or well-off farmers many years ago. All that remains now are collapsed walls and piles of debris. Several young trees have begun to grow amidst the ruins.
-"""
+> # Description
+> These ruined side-by-side cottages look as though they might once have been the homes of prosperous shopkeepers or well-off farmers many years ago. All that remains now are collapsed walls and piles of debris. Several young trees have begun to grow amidst the ruins.
 
 #### Notes
 * ***Six Twig Blights*** hide inside.
@@ -66,16 +62,14 @@ A weathered signboard by the door of this large building shows the faded image o
 
 ### 4. Druid's Watch
 
-"""description
-# Description
-This small house appears to be in better condition than the ruined and dilapidated structures nearby. The doors are reinforced with heavy iron bands, and thick shutters protect the windows.
-"""
+> # Description
+> This small house appears to be in better condition than the ruined and dilapidated structures nearby. The doors are reinforced with heavy iron bands, and thick shutters protect the windows.
 
 #### Notes
 * ***Reidoth.*** The druid lives here.
- * Gaunt, white-bearded human. old.
- * Terse, but hospitable.
- * Avoids the monsters in the ruins.
+  - Gaunt, white-bearded human. old.
+  - Terse, but hospitable.
+  - Avoids the monsters in the ruins.
 
 """description
 # Reidoth
@@ -102,10 +96,8 @@ This small house appears to be in better condition than the ruined and dilapidat
 
 ### 5. Blighted Farmhouse
 
-"""description
-# Description
-This ruin looks as if it might once have been a farmhouse. It is now half swallowed by a dense thicket, with trees growing up through its ruined foundations.
-"""
+> # Description
+> This ruin looks as if it might once have been a farmhouse. It is now half swallowed by a dense thicket, with trees growing up through its ruined foundations.
 
 #### Notes
 * **Eight twig blights** are hiding in the thicket to the east.
@@ -117,10 +109,8 @@ This ruin looks as if it might once have been a farmhouse. It is now half swallo
 
 ### 6. Ruined Store
 
-"""description
-# Description
-At an intersection near the middle of the village, a narrow lane winds up the steep hillside to the north. Directly to the south is a ruined building that might once have been a store or workshop. Webs stretch across the lane, from the building to the trees on the north side of the road.
-"""
+> # Description
+> At an intersection near the middle of the village, a narrow lane winds up the steep hillside to the north. Directly to the south is a ruined building that might once have been a store or workshop. Webs stretch across the lane, from the building to the trees on the north side of the road.
 
 #### Notes
 * **Giant spiders.** Two are hidden on the inner walls of this building.
@@ -145,12 +135,10 @@ At an intersection near the middle of the village, a narrow lane winds up the st
 
 ### 7. Dragon's Tower
 
-"""description
-# Description
-At the top of the hill stands a round tower with a cottage attached. Both are in good condition, although half the tower's roof is gone. A door leads into the cottage, and several arrowslit windows are visible in the tower. You can't help but notice an eerie quiet in the area, and a strange, acrid smell in the air.
-
-The corpses of two hideous giant spiders are sprawled near the edge of the pathway which, judging by the track marks, were dragged here. Their bloated bodies are puckered and blistered, and appear to have been mauled by a large animal.
-"""
+> # Description
+> At the top of the hill stands a round tower with a cottage attached. Both are in good condition, although half the tower's roof is gone. A door leads into the cottage, and several arrowslit windows are visible in the tower. You can't help but notice an eerie quiet in the area, and a strange, acrid smell in the air.
+> 
+> The corpses of two hideous giant spiders are sprawled near the edge of the pathway which, judging by the track marks, were dragged here. Their bloated bodies are puckered and blistered, and appear to have been mauled by a large animal.
 
 #### Notes
 
@@ -159,10 +147,8 @@ The corpses of two hideous giant spiders are sprawled near the edge of the pathw
  * Wooden beams. and stair supports cross the tower interior and show vestiges of where the floor used to be.
  * Chest. Broken open on the tower floor.
 
-"""description
-# Description
-You enter into a large round room. Four pillars, arranged in a square in the center mark the foundations. Stone walls tower above you, fading into darkness, punctuated by wooden joists that mark where floors once were and lined by a stone staircase that spirals up, clockwise, around the interior.
-"""
+> # Description
+> You enter into a large round room. Four pillars, arranged in a square in the center mark the foundations. Stone walls tower above you, fading into darkness, punctuated by wooden joists that mark where floors once were and lined by a stone staircase that spirals up, clockwise, around the interior.
 
 * **Dragon.** A young green dragon named **Vurkahsuul** has moved into the tower.
  * Flies away if taken down to half health.
@@ -196,10 +182,8 @@ A little larger than a horse, this beast is far from fully grown, but terrifying
  * 4000 XP total if they slay it.
 
 ### 8. Old Smithy
-"""description
-# Description
-A wide chimney and rotted piles of firewood jumbled outside the walls of this sagging building suggest that it was a smithy in its days.
-"""
+> # Description
+> A wide chimney and rotted piles of firewood jumbled outside the walls of this sagging building suggest that it was a smithy in its days.
 
 #### Notes
 * **Two ash zombies.** Slumped on the floor.
@@ -209,10 +193,8 @@ A wide chimney and rotted piles of firewood jumbled outside the walls of this sa
 ***Zombies.*** 100 XP total if they kill the zombies.
 
 ### 9. Herbalist's Shop
-"""description
-# Description
-This ruined shop is cluttered with sagging storage shelves and broken furniture. Shards of glass and pieces of pottery glint in the weeds and rubble next to rotted books an casks.
-"""
+> # Description
+> This ruined shop is cluttered with sagging storage shelves and broken furniture. Shards of glass and pieces of pottery glint in the weeds and rubble next to rotted books an casks.
 
 #### Notes
 * **Books.** All rotted and unreadable.
@@ -227,10 +209,8 @@ This ruined shop is cluttered with sagging storage shelves and broken furniture.
 
 ### 10. Town Square
 
-"""description
-# Description
-On the east side of town, the lane opens up to form a small square. Several ruined buildings surround the south side of the square, but a larger, intact structure to the north looks like a barracks. One lane leads southeast, another heads southwest around the hill in the middle of the town, and a third way meanders north. In the middle of the square, leaning slightly to one side is a weathered stone statue of a warrior. Clad in sleek plated armor, wearing a helmet adorned with wings, he clutches a fierce trident.
-"""
+> # Description
+> On the east side of town, the lane opens up to form a small square. Several ruined buildings surround the south side of the square, but a larger, intact structure to the north looks like a barracks. One lane leads southeast, another heads southwest around the hill in the middle of the town, and a third way meanders north. In the middle of the square, leaning slightly to one side is a weathered stone statue of a warrior. Clad in sleek plated armor, wearing a helmet adorned with wings, he clutches a fierce trident.
 
 /column
 
@@ -239,17 +219,12 @@ On the east side of town, the lane opens up to form a small square. Several ruin
  * **[DC 20 Strength]** to knock over.
  * **[DC 15 Intelligence (History)]** to remember:
 
-"""description
-# Statue
-"Looking closer, you realise that this is a statue of Rydell the Orcbane, who, you know from legend, supposedly defeated an Orcish hoard that roved north through Morduin, pillaging indiscriminately until they came to the town of Thundertree. It is said that Rydell single-handedly annihilated the orcs and saved the town."
-"""
+> # Statue
+> "Looking closer, you realise that this is a statue of Rydell the Orcbane, who, you know from legend, supposedly defeated an Orcish hoard that roved north through Morduin, pillaging indiscriminately until they came to the town of Thundertree. It is said that Rydell single-handedly annihilated the orcs and saved the town."
 
 #### 11. Old Garrison
-"""description
-# Description
-The barracks appears to have weathered the years better than most buildings in town. Its rooftop features a simple battlement, and arrowslit windows confirm that it was built to serve as a small keep in 
-times of emergency.
-"""
+> # Description
+> The barracks appears to have weathered the years better than most buildings in town. Its rooftop features a simple battlement, and arrowslit windows confirm that it was built to serve as a small keep in  times of emergency.
 
 #### Notes
 * **Five ash zombies.** Wearing rusted, rotten scraps of armor.
@@ -263,10 +238,8 @@ times of emergency.
 ***Ash zombies.*** 250 XP on defeating the zombies.
 
 ### 12. Weaver's Cottage
-"""description
-# Description
-Heaps of wreckage litter the interior of this ruin. In one corner stands a broken loom.
-"""
+> # Description
+> Heaps of wreckage litter the interior of this ruin. In one corner stands a broken loom.
 
 #### Notes
 * **Six Twig Blights.** Lurking in the thickets south of this ruin.
@@ -281,10 +254,8 @@ Heaps of wreckage litter the interior of this ruin. In one corner stands a broke
 /page
 
 ### 13. Dragon Cultists
-"""description
-# Description
-This small farmhouse appears to be just another empty home at first glance. However, all the doors are shut and the windows shuttered.
-"""
+> # Description
+> This small farmhouse appears to be just another empty home at first glance. However, all the doors are shut and the windows shuttered.
 
 #### Notes
 * **Locked doors.** [DC 20 Strength] to force them open.

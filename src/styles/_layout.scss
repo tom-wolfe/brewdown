@@ -1,12 +1,20 @@
-@media screen {
-  .page {
-    background-color: #e8e1c5;
-  }
-}
-
 .page {
+  background-color: #eee5ce;
+
   column-count: 2;
+  column-gap: 1cm;
   column-fill: auto;
+  column-width: 8cm;
+
+  margin-left:auto;
+  margin-right:auto;
+
+  overflow: hidden;
+
+  padding: 1.5cm 1cm 1.7cm 1cm;
+
+  page-break-before: always;
+  page-break-after: always;
 }
 
 .col-break {
