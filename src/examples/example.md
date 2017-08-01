@@ -119,7 +119,7 @@ A weathered signboard by the door of this large building shows the faded image o
 * **Attack.** If they attack **Reidoth**, he wild shapes into a squirrel and disappears through a crack.
 * **The Balance.** If any players show a tendency toward nature, he offers them a place in **The Balance.**
 
-/page
+\newpage
 
 ### 5. Blighted Farmhouse
 
@@ -197,7 +197,7 @@ From above you, piercing emerald eyes flash briefly in the darkness, and from th
 A little larger than a horse, this beast is far from fully grown, but terrifying all the same. Scales ripple, cascading down its form like fallen leaves as it moves, swaying its head back and forward, looking lazily between each of you.
 """
 
-/page
+\newpage
 
 #### Treasure
 ***Chest.*** Contains 150 GP, 800 SP, 4 silver goblets inset with moonstones (60 GP each), a scroll of misty step and a scroll of lightning bolt.
@@ -278,7 +278,7 @@ A little larger than a horse, this beast is far from fully grown, but terrifying
 #### Experience
 ***Twig blights.*** 150 XP total for defeating the twig blights.
 
-/page
+\newpage
 
 ### 13. Dragon Cultists
 > # Description
