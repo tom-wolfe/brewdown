@@ -111,6 +111,9 @@ This text will appear inside a green box with fancy corners
 """
 ```
 
+#### Image
+![Description Preview](/docs/images/note.png)
+
 ### Ability Blocks (Coming Soon!)
 
 These don't exist yet, but they will!
