@@ -7,7 +7,7 @@ const webpack = require('webpack')
 
 const config = require('./config')
 
-const brewdown = new Markdown().use(require('../src/js/brewdown'))
+const brewdown = new Markdown().use(require('../src/js/index'))
 
 webpack(config.webpack).run(() => {
   // Config complete.

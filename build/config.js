@@ -4,9 +4,15 @@ module.exports = {
   webpack: {
     entry: path.posix.resolve('src/js/index.js'),
     output: {
-      filename: 'bundle.js',
-      path: path.posix.resolve('dist/js')
-    }
+      filename: 'brewdown.js',
+      path: path.posix.resolve('dist/js'),
+      library: 'brewdown',
+      libraryTarget: 'umd'
+    },
+    externals: [
+      'markdown-it',
+      'markdown-it-container'
+    ]
   },
   sass: {
     entry: {

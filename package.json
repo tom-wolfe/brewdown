@@ -2,7 +2,8 @@
   "name": "brewdown",
   "version": "0.1.0",
   "description": "A markdown parser and stylesheet specifically for D&D homebrew.",
-  "main": "./src/js/index.js",
+  "main": "./dist/js/brewdown.js",
+  "module": "src/index.js",
   "scripts": {
     "build": "npm run clean && npm run lint && node ./build/index.js",
     "clean": "rimraf ./dist",
