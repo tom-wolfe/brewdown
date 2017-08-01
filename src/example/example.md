@@ -222,7 +222,7 @@ A little larger than a horse, this beast is far from fully grown, but terrifying
 > # Statue
 > "Looking closer, you realise that this is a statue of Rydell the Orcbane, who, you know from legend, supposedly defeated an Orcish hoard that roved north through Morduin, pillaging indiscriminately until they came to the town of Thundertree. It is said that Rydell single-handedly annihilated the orcs and saved the town."
 
-#### 11. Old Garrison
+### 11. Old Garrison
 > # Description
 > The barracks appears to have weathered the years better than most buildings in town. Its rooftop features a simple battlement, and arrowslit windows confirm that it was built to serve as a small keep in  times of emergency.
 
