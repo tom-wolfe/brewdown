@@ -12,6 +12,11 @@ The ruin of an old town that was overrun by zombies and mutant plants.
 
 ## Areas
 
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
+
 ::: stats
 ## Bored Avalanche Sheep of the Wasteland
 x

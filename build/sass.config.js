@@ -1,12 +1,12 @@
-const path = require("path");
+const path = require('path')
 
 module.exports = {
   entry: {
-    filename: "styles.scss",
-    path: path.resolve("src/styles")
+    filename: 'styles.scss',
+    path: path.resolve('src/styles')
   },
   output: {
-    filename: "styles.css",
-    path: path.resolve("dist/styles")
+    filename: 'styles.css',
+    path: path.resolve('dist/styles')
   }
-};
+}

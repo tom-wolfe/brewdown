@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run clean && npm run lint && node ./build/index.js",
     "clean": "rimraf ./dist",
-    "lint": "eslint .",
+    "lint": "standard --env jasmine --fix --verbose | snazzy",
     "test": "karma start --single-run",
     "test_watch": "karma start"
   },
@@ -30,8 +30,6 @@
   },
   "homepage": "https://github.com/trwolfe13/brewdown#readme",
   "devDependencies": {
-    "eslint": "^4.3.0",
-    "eslint-plugin-jasmine": "^2.8.3",
     "fs-extra": "^4.0.0",
     "jasmine-core": "^2.7.0",
     "karma": "^1.7.0",
@@ -40,6 +38,8 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "node-sass": "^4.5.3",
     "rimraf": "^2.6.1",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2",
     "webpack": "^3.4.1"
   },
   "dependencies": {

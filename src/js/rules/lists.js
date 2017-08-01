@@ -1,19 +1,18 @@
 module.exports = function (md) {
-
   const rule = state => {
-    const blockTokens = state.tokens;
+    const blockTokens = state.tokens
 
     for (let i = 0; i < state.tokens.length; i++) {
-      const token = blockTokens[i];
-      if (token.type !== "bullet_list_open") {
-        continue;
+      const token = blockTokens[i]
+      if (token.type !== 'bullet_list_open') {
+        continue
       }
-      if (token.markup === "-") {
-        token.attrPush(["class", "no-bullet"]);
+      if (token.markup === '-') {
+        token.attrPush(['class', 'no-bullet'])
       }
     }
-    console.log(blockTokens);
-  };
+    console.log(blockTokens)
+  }
 
-  md.core.ruler.push("list_style", rule);
-};
+  md.core.ruler.push('list_style', rule)
+}
