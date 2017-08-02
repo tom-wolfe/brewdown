@@ -79,3 +79,19 @@ blockquote, q, .description {
     background-color: transparent;
   }
 }
+
+.classtable {
+  background-color: white;
+  border: initial;
+  border-collapse: separate;
+  border-image-outset: 25px 17px;
+  border-image-repeat: round;
+  border-image-slice: 150 200 150 200;
+  border-image-source: url("images/table-border.png");
+  border-image-width: 47px;
+  border-style: solid;
+  margin-bottom: 40px;
+  margin-top: 25px;
+  column-span: all;
+  table-layout: fixed;
+}
