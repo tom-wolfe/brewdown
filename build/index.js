@@ -7,7 +7,9 @@ const webpack = require('webpack')
 
 const config = require('./config')
 
-const brewdown = new Markdown().use(require('../src/js/index'))
+const brewdown = new Markdown().use(require('../src/js/index'), {
+  style: 'two-col'
+})
 
 webpack(config.webpack).run(() => {
   // Config complete.
