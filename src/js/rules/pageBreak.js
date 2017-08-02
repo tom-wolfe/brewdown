@@ -11,7 +11,7 @@ module.exports = function (md, options) {
   const rule = state => {
     let blockTokens = state.tokens
 
-    blockTokens.splice(0, 0, tokenUtils.openPage(state, options.pageSize, options.style))
+    blockTokens.splice(0, 0, tokenUtils.pageOpen(state, options.pageSize, options.style))
 
     for (let i = blockTokens.length - 1; i >= 0; i--) {
       const blockToken = blockTokens[i]
@@ -23,14 +23,14 @@ module.exports = function (md, options) {
       blockTokens.splice(
         outerTokens.openIndex,
         outerTokens.length,
-        tokenUtils.closePage(state),
-        tokenUtils.openPage(state, options.pageSize, options.style)
+        tokenUtils.pageClose(state),
+        tokenUtils.pageOpen(state, options.pageSize, options.style)
       )
       i = outerTokens.openIndex
     }
 
     // Always end with a closed page
-    blockTokens.splice(blockTokens.length, 0, tokenUtils.closePage(state))
+    blockTokens.splice(blockTokens.length, 0, tokenUtils.pageClose(state))
   }
 
   md.core.ruler.push('page_break', rule)

@@ -1,47 +1,58 @@
+const tokenUtils = require('../tokenUtils')
+
 module.exports = function (md, options) {
+  const abilityNames = ['STR', 'DEX', 'CON', 'WIS', 'INT', 'CHA']
+
+  const tableClass = 'abilities'
   const openMarker = '{abilities:'
   const closeMarker = '}'
   const pattern = /([a-z]+)\s*=\s*(\d+)/gi
+
   const rule = state => {
-    const blockTokens = state.tokens
+    let tokens = state.tokens
+    for (let i = tokens.length - 1; i >= 0; i--) {
+      const token = tokens[i]
+      if (token.type !== 'inline') { continue }
 
-    console.log(JSON.stringify(state.tokens))
+      const content = token.content.trim()
+      if (content.indexOf(openMarker) !== 0 || content.indexOf(closeMarker) !== content.length - 1) { continue }
 
-    for (let j = 0, l = blockTokens.length; j < l; j++) {
-      const blockToken = blockTokens[j]
+      const tableTokens = []
+      tableTokens.push(tokenUtils.tableOpen(state, token.level, tableClass))
+      tableTokens.push(tokenUtils.theadOpen(state, token.level + 1))
+      tableTokens.push(tokenUtils.trOpen(state, token.level + 2))
+      abilityNames.forEach(ability => {
+        tableTokens.push(tokenUtils.thOpen(state, token.level + 3))
+        tableTokens.push(tokenUtils.inline(state, token.level + 4, ability))
+        tableTokens.push(tokenUtils.thClose(state, token.level + 3))
+      })
+      tableTokens.push(tokenUtils.trClose(state, token.level + 2))
+      tableTokens.push(tokenUtils.theadClose(state, token.level + 1))
 
-      if (blockToken.type !== 'inline' || blockToken.content.indexOf(openMarker) < 0) {
-        continue
+      // Extract ability scores from the token.
+      const abilities = {}
+      let match
+      while ((match = pattern.exec(content))) {
+        abilities[match[1].toUpperCase()] = match[2]
       }
 
-      let tokens = blockToken.children
-      for (let i = tokens.length - 1; i >= 0; i--) {
-        const token = tokens[i]
-        const content = token.content
-        const openIndex = content.indexOf(openMarker)
-        const closeIndex = content.indexOf(closeMarker)
-        if (token.type === 'text' && openIndex > -1 && closeIndex > -1) {
-          const newTokens = []
+      tableTokens.push(tokenUtils.tbodyOpen(state, token.level + 1))
+      tableTokens.push(tokenUtils.trOpen(state, token.level + 2))
+      abilityNames.forEach(ability => {
+        tableTokens.push(tokenUtils.tdOpen(state, token.level + 3))
 
-          const preToken = new state.Token('text', '', token.level)
-          preToken.content = content.substring(0, openIndex)
-          newTokens.push(preToken)
+        const abilityScore = abilities[ability]
+        const abilityMod = Math.floor((Number(abilityScore) - 10) / 2)
+        const sign = (abilityMod >= 0) ? '+' : ''
+        tableTokens.push(tokenUtils.inline(state, token.level + 4, `${abilityScore} (${sign}${abilityMod})`))
 
-          const pairs = {}
-          let match
-          while ((match = pattern.exec(content))) {
-            pairs[match[1].toLowerCase()] = match[2]
-          }
+        tableTokens.push(tokenUtils.tdClose(state, token.level + 3))
+      })
+      tableTokens.push(tokenUtils.trClose(state, token.level + 2))
+      tableTokens.push(tokenUtils.tbodyClose(state, token.level + 1))      
+      tableTokens.push(tokenUtils.tableClose(state, token.level))
 
-          // TODO: Inject ability scores.
-
-          const postToken = new state.Token('text', '', token.level)
-          postToken.content = content.substring(closeIndex + 1)
-          newTokens.push(postToken)
-
-          blockToken.children = tokens = state.md.utils.arrayReplaceAt(tokens, i, newTokens)
-        }
-      }
+      state.tokens = tokens = state.md.utils.arrayReplaceAt(tokens, i, tableTokens)
     }
   }
   md.core.ruler.push('ability_scores', rule)
