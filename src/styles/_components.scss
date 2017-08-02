@@ -93,5 +93,11 @@ blockquote, q, .description {
   margin-bottom: 40px;
   margin-top: 25px;
   column-span: all;
-  table-layout: fixed;
+  table-layout: auto;
+  table {
+    th, td {
+      line-height: 1.2;
+      padding: .3rem .1rem;
+    }
+  }
 }

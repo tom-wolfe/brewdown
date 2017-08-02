@@ -22,5 +22,4 @@
 | 18th | +6 | ─ | 15 | 8 | 4 | 3 | 3 | 3 | 3 | 2 | — | — | — |
 | 19th | +6 | Ability Score Improvement, Police Cultist | 16 | 9 | 4 | 3 | 3 | 3 | 3 | 2 | — | — | — |
 | 20th | +6 | Astrological Botany | 16 | 9 | 4 | 3 | 3 | 3 | 3 | 2 | 2 | — | — |
-</div>
 :::
