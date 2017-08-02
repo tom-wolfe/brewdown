@@ -76,7 +76,7 @@ As per the published adventures, you can produce descriptive or 'read aloud' tex
 
 #### Markdown
 
-```
+```md
 """description
 # Description
 You enter, through a low arch of cold stone, into the vast cavern beyond...
@@ -104,7 +104,7 @@ You enter, through a low arch of cold stone, into the vast cavern beyond...
 As per the published adventures, you can produce descriptive or 'read aloud' text that is scripted. This can be done in two ways, either using the standard quoting syntax, or using the new triple quote (""") container with a description type.
 
 #### Markdown
-```
+```md
 """note
 # Markdown!
 This text will appear inside a green box with fancy corners
@@ -119,7 +119,7 @@ This text will appear inside a green box with fancy corners
 These are fairly straightforward, but require some new syntax that is hopefully intuitive. See the example below for an idea on how to output ability blocks.
 
 #### Markdown
-```
+```md
 {abilities: STR=7, DEX=15, CON=9, INT=8, WIS=7, CHA=8}
 ```
 
@@ -158,11 +158,58 @@ These are fairly straightforward, but require some new syntax that is hopefully 
 
 Tables are unchanged from regular markdown, they just have styles applied.
 
-### Class Tables (Coming Soon!)
+### Class Tables
 
+Class tables are simple, simply wrap your class details in a `:::` block titled `classtable`, as per the example below.
+
+#### Markdown
+```md
+::: classtable
+##### The Programmer
+| Level | Proficiency Bonus | Features            |
+|:-----:|:-----------------:|:--------------------|
+|  1st  |         +2        | Hello World         |
+|  2nd  |         +2        | Nocturnal Biorhythm |
+|  3rd  |         +2        | Caffeine Resistance |
+:::
 ```
-[TODO: Sample Here]
+
+#### HTML
+
+```html
+<div class="classtable">
+  <h5>The Programmer</h5>
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align:center">Level</th>
+        <th style="text-align:center">Proficiency Bonus</th>
+        <th style="text-align:left">Features</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:center">1st</td>
+        <td style="text-align:center">+2</td>
+        <td style="text-align:left">Hello World</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">2nd</td>
+        <td style="text-align:center">+2</td>
+        <td style="text-align:left">Nocturnal Biorhythm</td>
+      </tr>
+      <tr>
+        <td style="text-align:center">3rd</td>
+        <td style="text-align:center">+2</td>
+        <td style="text-align:left">Caffeine Resistance</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 ```
+
+#### Image
+![Description Preview](/docs/images/classtable.png)
 
 ### Stat Blocks
 
@@ -170,7 +217,7 @@ One of the more complex components that can be about As per the published advent
 
 #### Markdown
 
-```
+```md
 :::stats
 ## Kobold
 *Small Humanoid (kobold), lawful evil*
