@@ -56,7 +56,7 @@ Unfortunately, there is no way to configure page automatically, so to begin a ne
 # First Page
 [My amazing homebrew]
 
-/page
+\newpage
 
 # Second Page
 [More amazing homebrew]
