@@ -11,11 +11,13 @@ module.exports = function (md, options) {
 
     for (let i = blockTokens.length - 1; i >= 0; i--) {
       const blockToken = blockTokens[i]
-      if (blockToken.type !== 'inline' || blockToken.content.trim() !== options.newPageMarker) {
+      if (blockToken.type !== 'inline' || blockToken.content.trim() !== options.newColumnMarker) {
         continue
       }
       // Found an inline token whose content matches our marker. Replace it with page close/open.
-      state.tokens = blockTokens = state.md.utils.arrayReplaceAt(blockTokens, i, tokenUtils.newColumn(state))
+      const outerTokens = tokenUtils.findOuter(blockTokens, i)
+      blockTokens.splice(outerTokens.openIndex, outerTokens.length, tokenUtils.newColumn(state))
+      i = outerTokens.openIndex
     }
   }
 

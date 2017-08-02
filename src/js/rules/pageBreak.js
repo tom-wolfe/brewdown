@@ -11,7 +11,6 @@ module.exports = function (md, options) {
   const rule = state => {
     let blockTokens = state.tokens
 
-    // Always start with an open page.
     blockTokens.splice(0, 0, tokenUtils.openPage(state, options.pageSize, options.style))
 
     for (let i = blockTokens.length - 1; i >= 0; i--) {
@@ -20,10 +19,14 @@ module.exports = function (md, options) {
         continue
       }
       // Found an inline token whose content matches our marker. Replace it with page close/open.
-      state.tokens = blockTokens = state.md.utils.arrayReplaceAt(blockTokens, i, [
+      const outerTokens = tokenUtils.findOuter(blockTokens, i)
+      blockTokens.splice(
+        outerTokens.openIndex,
+        outerTokens.length,
         tokenUtils.closePage(state),
         tokenUtils.openPage(state, options.pageSize, options.style)
-      ])
+      )
+      i = outerTokens.openIndex
     }
 
     // Always end with a closed page

@@ -15,7 +15,7 @@ module.exports = (md, options) => {
 }
 
 // const fs = require('fs-extra')
-// const MarkdownIt = require('markdown-it')
+const MarkdownIt = require('markdown-it')
 const md = MarkdownIt()
 // md.use(module.exports)
 // const file = fs.readFileSync('src/examples/ability-table.md').toString()
@@ -24,4 +24,4 @@ const md = MarkdownIt()
 
 md.use(columnBreak)
 const html = md.render('\\newcolumn')
-expect(html).toEqual('\n<div class="col-break"></div>\n')
+console.log(html)

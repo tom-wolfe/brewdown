@@ -216,8 +216,10 @@ Installing the dependencies is done using a standard ```npm install```.
 
 ## Running the Tests
 
+Tests are written (and run) using [Jasmine](https://jasmine.github.io/). The following command will run the tests.
+
 ```
-npm run test
+npm test
 ```
 
 ## Building the project
