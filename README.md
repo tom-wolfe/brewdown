@@ -46,11 +46,11 @@ console.log(html)
 
 #### New Column
 
-It is possible to force a new column using the `/column` command. This is often necessary as CSS columns aren't always accurate.
+It is possible to force a new column using the `\newcolumn` command. This is often necessary as CSS columns aren't always accurate.
 
 #### New Page
 
-Unfortunately, there is no way to configure page automatically, so to begin a new page, you must use the `/page` command.
+Unfortunately, there is no way to configure page automatically, so to begin a new page, you must use the `\newpage` command.
 
 ```md
 # First Page
