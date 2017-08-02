@@ -1,7 +1,3 @@
 # TODO
 
-## Class Tables
-
---?
-
-## Wide/colspan
+## TODO: Wide/colspan

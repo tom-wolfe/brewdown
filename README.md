@@ -307,6 +307,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 See also the list of [contributors](https://github.com/trwolfe13/brewdown/contributors) who participated in this project.
 
+## Credits
+
+A lot of this work would not have been possible were it not for the [Homebrewery project](https://github.com/stolksdorf/homebrewery) developed by [stolksdorf](https://github.com/stolksdorf). It is from that project the styling and graphics are based (and in some cases outright taken).
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
