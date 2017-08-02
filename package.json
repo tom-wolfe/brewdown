@@ -2,14 +2,13 @@
   "name": "brewdown",
   "version": "0.1.1",
   "description": "A flavour of markdown and stylesheet specifically for D&amp;D 5th edition homebrew, implemented as a plugin for markdown-it.",
-  "main": "./dist/js/brewdown.js",
-  "module": "src/index.js",
+  "main": "src/js/index.js",
+  "module": "./dist/js/brewdown.js",
   "scripts": {
     "build": "npm run clean && npm run lint && node ./build/index.js",
     "clean": "rimraf ./dist",
     "lint": "standard --env jasmine --fix --verbose | snazzy",
-    "test": "karma start --single-run",
-    "test_watch": "karma start"
+    "test": "node ./spec/index.js"
   },
   "repository": {
     "type": "git",
@@ -32,11 +31,7 @@
   "homepage": "https://github.com/trwolfe13/brewdown#readme",
   "devDependencies": {
     "fs-extra": "^4.0.0",
-    "jasmine-core": "^2.7.0",
-    "karma": "^1.7.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-jasmine": "^1.1.0",
-    "karma-jasmine-html-reporter": "^0.2.2",
+    "jasmine": "^2.7.0",
     "klaw": "^2.0.0",
     "node-sass": "^4.5.3",
     "rimraf": "^2.6.1",
@@ -47,5 +42,12 @@
   "dependencies": {
     "markdown-it": "^8.3.1",
     "markdown-it-container": "^2.0.0"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "expect"
+    ]
   }
 }

@@ -1,25 +1,24 @@
+const tokenUtils = require('../tokenUtils')
+
 module.exports = function (md, options) {
   const defaultOptions = {
-    newColumnMarker: '\\newcolumn',
-    columnBreakName: 'column_break'
+    newColumnMarker: '\\newcolumn'
   }
   options = Object.assign({}, defaultOptions, options)
 
-  function createNewColumn (state) {
-    return new state.Token(options.columnBreakName, '', 0)
-  }
-
   const rule = state => {
-    const blockTokens = state.tokens
-    for (let j = 0, l = blockTokens.length; j < l; j++) {
-      const blockToken = blockTokens[j]
-      if (blockToken.type !== 'inline' || blockToken.content.trim() !== options.newColumnMarker) {
+    let blockTokens = state.tokens
+
+    for (let i = blockTokens.length - 1; i >= 0; i--) {
+      const blockToken = blockTokens[i]
+      if (blockToken.type !== 'inline' || blockToken.content.trim() !== options.newPageMarker) {
         continue
       }
-      blockToken.children = [createNewColumn(state)]
+      // Found an inline token whose content matches our marker. Replace it with page close/open.
+      state.tokens = blockTokens = state.md.utils.arrayReplaceAt(blockTokens, i, tokenUtils.newColumn(state))
     }
   }
 
-  md.core.ruler.push(options.columnBreakName, rule)
-  md.renderer.rules[options.columnBreakName] = () => '\n<div class="col-break"></div>\n'
+  md.core.ruler.push('column_break', rule)
+  md.renderer.rules['column_break'] = () => '\n<div class="col-break"></div>\n'
 }

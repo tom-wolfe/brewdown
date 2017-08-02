@@ -59,11 +59,17 @@ blockquote, q, .description {
 }
 
 .abilities {
-  &, table {
-    width: 100%;
-  }
   th, td {
     text-align: center;
+    padding: 0;
+  }
+  th {
+    font-family: "Scala Sans";
+    font-size: 0.75rem;
+  }
+  td {
+    font-family: "ScalySans";
+    font-size: 0.8rem;
   }
   tr:nth-child(odd) {
     background-color: transparent;

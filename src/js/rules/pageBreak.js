@@ -1,3 +1,5 @@
+const tokenUtils = require('../tokenUtils')
+
 module.exports = function (md, options) {
   const defaultOptions = {
     pageSize: 'a4',
@@ -6,31 +8,26 @@ module.exports = function (md, options) {
   }
   options = Object.assign({}, defaultOptions, options)
 
-  function createOpenPage (state) {
-    const pageOpen = new state.Token('page_open', 'div', 1)
-    pageOpen.block = true
-    pageOpen.attrPush(['class', `page ${options.pageSize} ${options.style}`.trim()])
-    return pageOpen
-  }
-
-  function createClosePage (state) {
-    const pageClose = new state.Token('page_close', 'div', -1)
-    pageClose.block = true
-    return pageClose
-  }
-
   const rule = state => {
-    const blockTokens = state.tokens
-    blockTokens.splice(0, 0, createOpenPage(state))
-    for (let j = 0, l = blockTokens.length; j < l; j++) {
-      const blockToken = blockTokens[j]
+    let blockTokens = state.tokens
+
+    // Always start with an open page.
+    blockTokens.splice(0, 0, tokenUtils.openPage(state, options.pageSize, options.style))
+
+    for (let i = blockTokens.length - 1; i >= 0; i--) {
+      const blockToken = blockTokens[i]
       if (blockToken.type !== 'inline' || blockToken.content.trim() !== options.newPageMarker) {
         continue
       }
-      blockToken.children = [createClosePage(state), createOpenPage(state)]
+      // Found an inline token whose content matches our marker. Replace it with page close/open.
+      state.tokens = blockTokens = state.md.utils.arrayReplaceAt(blockTokens, i, [
+        tokenUtils.closePage(state),
+        tokenUtils.openPage(state, options.pageSize, options.style)
+      ])
     }
 
-    blockTokens.splice(blockTokens.length, 0, createClosePage(state))
+    // Always end with a closed page
+    blockTokens.splice(blockTokens.length, 0, tokenUtils.closePage(state))
   }
 
   md.core.ruler.push('page_break', rule)

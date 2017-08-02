@@ -1,5 +1,5 @@
 const MarkdownIt = require('markdown-it')
-const columnBreak = require('/src/js/rules/columnBreak')
+const columnBreak = require('../../src/js/rules/columnBreak')
 
 describe('columnBreak', () => {
   describe('render', () => {

@@ -14,8 +14,14 @@ module.exports = (md, options) => {
   md.use(lists, options)
 }
 
-const fs = require('fs-extra')
-const MarkdownIt = require('markdown-it')
-const md = MarkdownIt().use(module.exports)
-const file = fs.readFileSync('src/examples/ability-table.md').toString()
-console.log(md.render(file))
+// const fs = require('fs-extra')
+// const MarkdownIt = require('markdown-it')
+const md = MarkdownIt()
+// md.use(module.exports)
+// const file = fs.readFileSync('src/examples/ability-table.md').toString()
+// const html = md.render(file)
+// console.log(html)
+
+md.use(columnBreak)
+const html = md.render('\\newcolumn')
+expect(html).toEqual('\n<div class="col-break"></div>\n')

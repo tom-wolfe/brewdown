@@ -5,6 +5,8 @@ module.exports = function (md, options) {
   const rule = state => {
     const blockTokens = state.tokens
 
+    console.log(JSON.stringify(state.tokens))
+
     for (let j = 0, l = blockTokens.length; j < l; j++) {
       const blockToken = blockTokens[j]
 
