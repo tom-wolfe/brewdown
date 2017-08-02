@@ -10,6 +10,7 @@ module.exports = function (md, options) {
 
   const rule = state => {
     let tokens = state.tokens
+
     for (let i = tokens.length - 1; i >= 0; i--) {
       const token = tokens[i]
       if (token.type !== 'inline') { continue }
@@ -49,10 +50,12 @@ module.exports = function (md, options) {
         tableTokens.push(tokenUtils.tdClose(state, token.level + 3))
       })
       tableTokens.push(tokenUtils.trClose(state, token.level + 2))
-      tableTokens.push(tokenUtils.tbodyClose(state, token.level + 1))      
+      tableTokens.push(tokenUtils.tbodyClose(state, token.level + 1))
       tableTokens.push(tokenUtils.tableClose(state, token.level))
 
-      state.tokens = tokens = state.md.utils.arrayReplaceAt(tokens, i, tableTokens)
+      const outerTokens = tokenUtils.findOuter(tokens, i)
+      state.tokens.splice(outerTokens.openIndex, outerTokens.length, ...tableTokens)
+      i = outerTokens.openIndex
     }
   }
   md.core.ruler.push('ability_scores', rule)

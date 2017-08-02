@@ -112,11 +112,12 @@ This text will appear inside a green box with fancy corners
 ```
 
 #### Image
-![Description Preview](/docs/images/note.png)
+![Note Preview](/docs/images/note.png)
 
-### Ability Blocks (Coming Soon!)
+### Ability Blocks
 
-These don't exist yet, but they will!
+These are fairly straightforward, but require some new syntax that is hopefully intuitive. See the example below for an idea on how to output ability blocks.
+
 #### Markdown
 ```
 {abilities: STR=7, DEX=15, CON=9, INT=8, WIS=7, CHA=8}
@@ -125,12 +126,33 @@ These don't exist yet, but they will!
 #### HTML
 
 ```html
-<!-- TODO: Sample -->
+<table class="abilities">
+  <thead>
+    <tr>
+      <th>STR</th>
+      <th>DEX</th>
+      <th>CON</th>
+      <th>WIS</th>
+      <th>INT</th>
+      <th>CHA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>15 (+2)</td>
+      <td>13 (+1)</td>
+      <td>1 (-5)</td>
+      <td>1 (-5)</td>
+      <td>13 (+1)</td>
+      <td>9 (-1)</td>
+    </tr>
+  </tbody>
+</table>
 ```
 
 #### Image
 
-[TODO: Ability image sample]
+![Note Preview](/docs/images/abilityblock.png)
 
 ### Small Tables
 
@@ -184,7 +206,7 @@ ___
     <li><strong>Speed</strong> 30 ft.</li>
   </ul>
   <hr>
-  <p>{abilities: STR=7, DEX=15, CON=9, INT=8, WIS=7, CHA=8}</p>
+    <!-- Omitted ability block for brevity -->
   <hr>
   <ul class="no-bullet">
     <li><strong>Senses</strong> darkvision 60 ft., passivePerception 8</li>
