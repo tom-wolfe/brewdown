@@ -4,11 +4,13 @@ node_modules/
 
 build/
 coverage/
+dist/examples/
 src/
 spec/
 
 .gitattributes
 .gitignore
+.npmignore
 
 karma.conf.js
 .travis.yml
