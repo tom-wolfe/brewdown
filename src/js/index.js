@@ -1,5 +1,6 @@
 const abilityScores = require('./rules/abilityScores')
 const classTable = require('./rules/classTable')
+const coverPage = require('./rules/coverPage')
 const columnBreak = require('./rules/columnBreak')
 const listStyle = require('./rules/listStyle')
 const pageBreak = require('./rules/pageBreak')
@@ -14,4 +15,5 @@ module.exports = (md, options) => {
   md.use(classTable, options)
   md.use(abilityScores, options)
   md.use(listStyle, options)
+  md.use(coverPage, options)
 }
