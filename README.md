@@ -1,4 +1,4 @@
-[![NPM version](https://badge.fury.io/js/brewdown.svg)](http://badge.fury.io/js/brewdown) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM version](https://badge.fury.io/js/brewdown.svg)](http://badge.fury.io/js/brewdown) [![Build Status](https://travis-ci.org/trwolfe13/brewdown.svg?branch=master)](https://travis-ci.org/trwolfe13/brewdown) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 # brewdown
 
