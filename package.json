@@ -1,6 +1,6 @@
 {
   "name": "brewdown",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "A flavour of markdown and stylesheet specifically for D&amp;D 5th edition homebrew, implemented as a plugin for markdown-it.",
   "main": "src/js/index.js",
   "module": "./dist/js/brewdown.js",
