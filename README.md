@@ -62,6 +62,30 @@ Unfortunately, there is no way to configure pages to flow automatically, so to b
 [More amazing homebrew]
 ``` 
 
+### Cover Pages
+
+Cover pages are horizontally centered (across both columns in two-column mode) and positioned just above vertical centre.
+
+#### Markdown
+```md
+::: cover
+# Places
+##### Cities and Towns
+:::
+```
+
+#### HTML
+
+```html
+<div class="cover">
+  <h1>Places</h1>
+  <h5>Cities and Towns</h5>
+</div>
+```
+
+#### Image
+![Cover Preview](/docs/images/coverpage.png)
+
 ### Headings
 
 Heading styles range from levels 1 to 6, (`#` to `######`) and closely approximate those in the D&D 5th Edition Player Handbook.
