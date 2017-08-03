@@ -50,7 +50,7 @@ It is possible to force a new column using the `\newcolumn` command. This is oft
 
 #### New Page
 
-Unfortunately, there is no way to configure page automatically, so to begin a new page, you must use the `\newpage` command.
+Unfortunately, there is no way to configure pages to flow automatically, so to begin a new page, you must use the `\newpage` command.
 
 ```md
 # First Page
