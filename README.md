@@ -98,7 +98,6 @@ You enter, through a low arch of cold stone, into the vast cavern beyond...
 #### Image
 ![Description Preview](/docs/images/description.png)
 
-
 ### Notes
 
 As per the published adventures, you can produce descriptive or 'read aloud' text that is scripted. This can be done in two ways, either using the standard quoting syntax, or using the new triple quote (""") container with a description type.
