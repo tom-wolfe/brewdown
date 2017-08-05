@@ -1,6 +1,6 @@
-[![NPM version](https://badge.fury.io/js/brewdown.svg)](http://badge.fury.io/js/brewdown) [![Build Status](https://travis-ci.org/trwolfe13/brewdown.svg?branch=master)](https://travis-ci.org/trwolfe13/brewdown) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+# brewdown [![NPM version](https://badge.fury.io/js/brewdown.svg)](http://badge.fury.io/js/brewdown)
 
-# brewdown
+[![Build Status](https://travis-ci.org/trwolfe13/brewdown.svg?branch=master)](https://travis-ci.org/trwolfe13/brewdown) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 A flavour of markdown and stylesheet specifically for D&amp;D 5th edition homebrew, implemented as a plugin for [markdown-it](https://github.com/markdown-it/markdown-it).
 
@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-```
+```batchfile
 npm install brewdown --save
 ```
 
@@ -60,13 +60,14 @@ Unfortunately, there is no way to configure pages to flow automatically, so to b
 
 # Second Page
 [More amazing homebrew]
-``` 
+```
 
 ### Cover Pages
 
 Cover pages are horizontally centered (across both columns in two-column mode) and positioned just above vertical centre.
 
-#### Markdown
+#### Cover Markdown
+
 ```md
 ::: cover
 # Places
@@ -74,7 +75,7 @@ Cover pages are horizontally centered (across both columns in two-column mode) a
 :::
 ```
 
-#### HTML
+#### Cover HTML
 
 ```html
 <div class="cover">
@@ -83,7 +84,8 @@ Cover pages are horizontally centered (across both columns in two-column mode) a
 </div>
 ```
 
-#### Image
+#### Cover Preview
+
 ![Cover Preview](/docs/images/coverpage.png)
 
 ### Headings
@@ -98,7 +100,7 @@ List styles are the same as regular markdown, with the exception that `*` will p
 
 As per the published adventures, you can produce descriptive or 'read aloud' text that is scripted. This can be done in two ways, either using the standard quoting syntax, or using the new triple quote (""") container with a description type.
 
-#### Markdown
+#### Description Markdown
 
 ```md
 """description
@@ -110,7 +112,7 @@ You enter, through a low arch of cold stone, into the vast cavern beyond...
 > You enter, through a low arch of cold stone, into the vast cavern beyond...
 ```
 
-#### HTML
+#### Description HTML
 
 ```html
 <blockquote>
@@ -119,14 +121,16 @@ You enter, through a low arch of cold stone, into the vast cavern beyond...
 </blockquote>
 ```
 
-#### Image
+#### Description Preview
+
 ![Description Preview](/docs/images/description.png)
 
 ### Notes
 
 As per the published adventures, you can produce descriptive or 'read aloud' text that is scripted. This can be done in two ways, either using the standard quoting syntax, or using the new triple quote (""") container with a description type.
 
-#### Markdown
+#### Note Markdown
+
 ```md
 """note
 # Markdown!
@@ -134,19 +138,21 @@ This text will appear inside a green box with fancy corners
 """
 ```
 
-#### Image
+#### Note Preview
+
 ![Note Preview](/docs/images/note.png)
 
 ### Ability Blocks
 
 These are fairly straightforward, but require some new syntax that is hopefully intuitive. See the example below for an idea on how to output ability blocks.
 
-#### Markdown
+#### Ability Block Markdown
+
 ```md
 {abilities: STR=7, DEX=15, CON=9, INT=8, WIS=7, CHA=8}
 ```
 
-#### HTML
+#### Ability Block HTML
 
 ```html
 <table class="abilities">
@@ -173,7 +179,7 @@ These are fairly straightforward, but require some new syntax that is hopefully 
 </table>
 ```
 
-#### Image
+#### Ability Block Preview
 
 ![Note Preview](/docs/images/abilityblock.png)
 
@@ -185,7 +191,8 @@ Tables are unchanged from regular markdown, they just have styles applied.
 
 Class tables are simple, simply wrap your class details in a `:::` block titled `classtable`, as per the example below.
 
-#### Markdown
+#### Class Table Markdown
+
 ```md
 ::: classtable
 ##### The Programmer
@@ -197,7 +204,7 @@ Class tables are simple, simply wrap your class details in a `:::` block titled 
 :::
 ```
 
-#### HTML
+#### Class Table HTML
 
 ```html
 <div class="classtable">
@@ -231,14 +238,15 @@ Class tables are simple, simply wrap your class details in a `:::` block titled 
 </div>
 ```
 
-#### Image
+#### Class Table Preview
+
 ![Description Preview](/docs/images/classtable.png)
 
 ### Stat Blocks
 
 One of the more complex components that can be about As per the published adventures, you can produce descriptive or 'read aloud' text that is scripted. This can be done in two ways, either using the standard quoting syntax, or using the new triple quote (""") container with a description type.
 
-#### Markdown
+#### Stat Block Markdown
 
 ```md
 :::stats
@@ -263,7 +271,8 @@ ___
 - ***Sling.*** *Ranged Weapon Attack:* +4 to hit, reach 30/120 ft., one target. *Hit:* 4 (1d4 + 2) bludgeoning damage
 :::
 ```
-#### HTML
+
+#### Stat Block HTML
 
 ```html
 <div class="stats">
@@ -299,7 +308,8 @@ ___
 </div>
 ```
 
-#### Image
+#### Stat Block Preview
+
 ![Description Preview](/docs/images/statblock.png)
 
 ## Installing Dependencies
@@ -310,19 +320,19 @@ Installing the dependencies is done using a standard ```npm install```.
 
 Tests are written (and run) using [Jasmine](https://jasmine.github.io/). The following command will run the tests.
 
-```
+```batchfile
 npm test
 ```
 
 ## Building the project
 
-```
+```batchfile
 npm run build
 ```
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/trwolfe13/brewdown/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/trwolfe13/brewdown/tags).
 
 ## Authors
 
