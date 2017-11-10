@@ -1,6 +1,6 @@
 {
   "name": "brewdown",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A flavour of markdown and stylesheet specifically for D&amp;D 5th edition homebrew, implemented as a plugin for markdown-it.",
   "main": "./dist/js/brewdown.js",
   "scripts": {
@@ -29,6 +29,9 @@
   },
   "homepage": "https://github.com/trwolfe13/brewdown#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "fs-extra": "^4.0.0",
     "jasmine": "^2.7.0",
     "klaw": "^2.0.0",

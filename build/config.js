@@ -12,7 +12,12 @@ module.exports = {
     externals: [
       'markdown-it',
       'markdown-it-container'
-    ]
+    ],
+    module: {
+      rules: [
+        { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }
+      ]
+    }
   },
   sass: {
     entry: {
