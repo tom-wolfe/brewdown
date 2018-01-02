@@ -244,7 +244,7 @@ Class tables are simple, simply wrap your class details in a `:::` block titled 
 
 ### Stat Blocks
 
-One of the more complex components that can be about As per the published adventures, you can produce descriptive or 'read aloud' text that is scripted. This can be done in two ways, either using the standard quoting syntax, or using the new triple quote (""") container with a description type.
+One of the more complex components that can be rendered is the monster stat block. An example for the correct formatting for these is listed below. There is currently no way to make a wide (two-column) stat block.
 
 #### Stat Block Markdown
 
