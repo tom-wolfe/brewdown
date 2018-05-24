@@ -1,7 +1,7 @@
 const tokenUtils = require('../tokenUtils')
 
 module.exports = function (md, options) {
-  const abilityNames = ['STR', 'DEX', 'CON', 'WIS', 'INT', 'CHA']
+  const abilityNames = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA']
 
   const tableClass = 'abilities'
   const openMarker = '{abilities:'
