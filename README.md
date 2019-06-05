@@ -8,6 +8,10 @@ A flavour of markdown and stylesheet specifically for D&amp;D 5th edition homebr
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+## An Important Note
+
+Due to CSS column support not being available in some browsers, the rendered HTML will likely only display correctly in Chrome.
+
 ### Installing
 
 ```batchfile
@@ -244,7 +248,7 @@ Class tables are simple, simply wrap your class details in a `:::` block titled 
 
 ### Stat Blocks
 
-One of the more complex components that can be rendered is the monster stat block. An example for the correct formatting for these is listed below. There is currently no way to make a wide (two-column) stat block.
+One of the more complex components that can be rendered is the monster stat block. An example for the correct formatting for these is listed below. Two-column stat blocks can be used with the `:::stats-wide` notation, but due to the limitations of CSS, these can break column wrapping on nearby elements.
 
 #### Stat Block Markdown
 
