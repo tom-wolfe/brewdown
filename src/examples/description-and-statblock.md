@@ -1,7 +1,4 @@
-> ##### Description
-> This chamber has been set up as a crude living space, with thick furs thrown on the floor to serve as carpets, old trophies hanging on the walls, a large bed to the north, and a brazier of coals burning A round table with several chairs stands to the south near the door. Near the table, on the floor, is an unconscious wood elf who looks badly beaten.
-
-::: stats
+::: stats-wide
 ## Wolf
 *Medium beast, Unaligned*
 ___
@@ -16,6 +13,7 @@ ___
 - **Languages** (None)
 - **Challenge** 1/4 (50 XP)
 ___
+\newcolumn
 - ***Keen Hearing and Smell.*** The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.
 - ***Pack Tactics.*** The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally isn't incapacitated.
 ### Actions
@@ -25,6 +23,9 @@ ___
 - * Spell thing?
 - * Third thing?
 :::
+
+> ##### Description
+> This chamber has been set up as a crude living space, with thick furs thrown on the floor to serve as carpets, old trophies hanging on the walls, a large bed to the north, and a brazier of coals burning A round table with several chairs stands to the south near the door. Near the table, on the floor, is an unconscious wood elf who looks badly beaten.
 
 > ##### Description
 > This chamber has been set up as a crude living space, with thick furs thrown on the floor to serve as carpets, old trophies hanging on the walls, a large bed to the north, and a brazier of coals burning A round table with several chairs stands to the south near the door. Near the table, on the floor, is an unconscious wood elf who looks badly beaten.
