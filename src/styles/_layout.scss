@@ -10,16 +10,18 @@
   padding-right: 1cm;
 
   &.two-col {
-    column-count: 2;
-    column-gap: 1cm;
-    column-fill: auto;
-    column-width: 8cm;
-
     padding-bottom: 1.7cm;
 
     page-break-before: always;
     page-break-after: always;  
   }
+}
+
+.two-col {
+  column-count: 2;
+  column-gap: 1cm;
+  column-fill: auto;
+  column-width: 8cm;
 }
 
 .col-break {

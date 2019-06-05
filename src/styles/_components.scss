@@ -41,6 +41,8 @@ blockquote, q, .description {
   margin-top: 1rem;
   padding: 5px 10px;
 
+  &.two-col { column-span: all; }
+
   h2 {
     margin-top: .1em;
   }
