@@ -35,7 +35,7 @@
     "fs-extra": "^4.0.0",
     "jasmine": "^2.7.0",
     "klaw": "^2.0.0",
-    "node-sass": "^4.5.3",
+    "node-sass": "^7.0.0",
     "rimraf": "^2.6.1",
     "snazzy": "^7.0.0",
     "standard": "^10.0.2",
